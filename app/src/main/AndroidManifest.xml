@@ -10,9 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExoListeOrdinateurs">
         <activity
+            android:name=".NewOrdinateurActivity"
+            android:exported="false" />
+        <activity
             android:name=".OrdinateurActivity"
             android:exported="false" />
-
         <activity
             android:name=".MainActivity"
             android:exported="true">

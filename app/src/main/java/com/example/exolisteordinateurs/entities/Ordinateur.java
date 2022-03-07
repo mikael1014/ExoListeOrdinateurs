@@ -1,11 +1,17 @@
-package com.example.exolisteordinateurs.model;
+package com.example.exolisteordinateurs.entities;
 
-import com.example.exolisteordinateurs.model.enum_.PublicViser;
-import com.example.exolisteordinateurs.model.enum_.TypeClavier;
+import androidx.room.ColumnInfo;
+import androidx.room.Entity;
+import androidx.room.PrimaryKey;
+
+import com.example.exolisteordinateurs.entities.enum_.PublicViser;
+import com.example.exolisteordinateurs.entities.enum_.TypeClavier;
 
 import java.io.Serializable;
-
+@Entity
 public class Ordinateur implements Serializable {
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "idOrdinateur")
     private long id;
     private String anneeDeFabrication;
     private String marque;
@@ -79,5 +85,17 @@ public class Ordinateur implements Serializable {
         this.numSerie = numSerie;
         this.publicViser = publicViser;
         this.typeClavier = typeClavier;
+    }
+
+    @Override
+    public String toString() {
+        return "Ordinateur{" +
+                "id=" + id +
+                ", anneeDeFabrication='" + anneeDeFabrication + '\'' +
+                ", marque='" + marque + '\'' +
+                ", numSerie='" + numSerie + '\'' +
+                ", publicViser=" + publicViser +
+                ", typeClavier=" + typeClavier +
+                '}';
     }
 }

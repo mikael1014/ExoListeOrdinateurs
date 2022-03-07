@@ -5,7 +5,7 @@ import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-import com.example.exolisteordinateurs.model.Ordinateur;
+import com.example.exolisteordinateurs.entities.Ordinateur;
 
 public class OrdinateurActivity extends AppCompatActivity {
 

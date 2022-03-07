@@ -9,7 +9,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 
-import com.example.exolisteordinateurs.model.Ordinateur;
+import com.example.exolisteordinateurs.entities.Ordinateur;
 
 import java.util.List;
 

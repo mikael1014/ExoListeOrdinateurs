@@ -1,4 +1,4 @@
-package com.example.exolisteordinateurs.model.enum_;
+package com.example.exolisteordinateurs.entities.enum_;
 
 public enum PublicViser {
     PRO,
